@@ -1,0 +1,39 @@
+<div *ngIf="users.length > 0; else listavazia"  style="margin:0 30px;">
+  <h2 style="text-align: center;">Lista de Usuários</h2>
+  <table>
+      <tr>
+          <th>Número</th>
+          <th>Nome</th>
+          <th>Cpf</th>
+          <th>Email</th>
+          <th>Telefone</th>
+          <th>Sexo</th>
+          <th>Data Nascimento</th>
+          <th>Deletar</th>
+      </tr>
+      <tr *ngFor="let user of users; index as i">
+          <td>{{ i }}</td>
+          <td>{{ user.name }}</td>
+          <td>{{ user.cpf }}</td>
+          <td>{{ user.email }}</td>
+          <td>{{ user.telefone }}</td>
+          <td>{{ user.sexo }}</td>
+          <td>{{ user.data_nascimento }}</td>
+          <td (click)="deletarUser(user.id)"  class="delete-icon">	<mat-icon>delete</mat-icon></td>
+      </tr>
+  </table>
+
+  <button style="text-align: center;" routerLink="/cadastro" class="button-cadastro">Clique aqui para cadastrar novos usuários</button>
+</div>
+
+
+
+<ng-template #listavazia>
+
+  <div class="listavazia">Não há usuários cadastrados.
+    <button routerLink="/cadastro" class="button-cadastro">Clique aqui para cadastrar novos usuários</button>
+  </div>
+
+
+
+</ng-template>

@@ -1,0 +1,56 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.delete-icon {
+  cursor: pointer;
+}
+
+.delete-icon .mat-icon:hover {
+  color: red;
+  transition: all ease-in 0.3s;
+}
+th {
+  color: white;
+  background-color: cornflowerblue;
+  border: 1px solid cornflowerblue;
+}
+td {
+  border: 1px solid #dddddd;
+}
+td,
+th {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+.listavazia {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  font-size: 30px;
+  color: red;
+}
+
+.button-cadastro {
+  margin-top: 20px;
+  width: 250px;
+  background-color: cornflowerblue;
+  color: white;
+  border: 0px;
+}
+
+.button-cadastro:hover {
+  background-color: cornflowerblue;
+  color: white;
+  cursor: pointer;
+  transition: all ease-in 0.5s;
+}
