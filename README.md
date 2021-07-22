@@ -6,6 +6,6 @@ yarn dentro do diretório
 yarn typeorm:migration run
 yarn dev
 
-#Front-end
+# Front-end
 npm install/ yarn dentro do diretório
 npm start/ yarn start
